@@ -1,4 +1,4 @@
-# README
+# Rails Caching Examples
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -13,7 +13,11 @@ Things you may want to cover:
 
 * Database creation
 
+`rails db:create`
+
 * Database initialization
+
+`rails db:migrate db:seed`
 
 * How to run the test suite
 
