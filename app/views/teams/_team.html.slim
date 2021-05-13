@@ -1,0 +1,10 @@
+h1 #{team.name}
+
+- team.members.order(points: :desc).each do |member|
+  = render member
+
+/ = render partial: 'members/member', collection: team.members.order(points: :desc), cached: true
+
+/ - team.members.order(points: :desc).each do |member|
+/   - cache member do
+/     = render member

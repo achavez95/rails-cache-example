@@ -1,0 +1,8 @@
+/ - @members.order(points: :desc).each do |member|
+/   - cache member do
+/     = render member
+
+= render partial: 'members/member', collection: @members.order(points: :desc), cached: true
+
+/ - @members.order(points: :desc).each do |member|
+/   = render member

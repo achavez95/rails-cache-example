@@ -1,0 +1,8 @@
+/ = render partial: 'teams/team', collection: @teams, cached: true
+
+/ - @teams.each do |team|
+/   - cache team do
+/     = render team
+
+- @teams.each do |team|
+  = render team
